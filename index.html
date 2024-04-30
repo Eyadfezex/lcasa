@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xs: "375px",
+            md: "768px",
+            xxl: "1400px",
+            xl: "900px",
+          },
+        },
+      };
+    </script>
+    <title>
+      La Casa Digital – O maior Reality Show de Marketing Digital do Mundo
+    </title>
+  </head>
+  <body class="h-full w-full">
+    <section class="xs:bg-[#131313] bg-auto">
+      <div
+        class="w-full h-screen xs:h-[114vh] xl:h-[90vh] bg-no-repeat bg-contain mb-10 back xl:bg-left"
+      >
+        <style scoped>
+          @media (min-width: 768px) {
+            .back {
+              background-image: url(./assets/lx-image.png);
+            }
+          }
+          @media (min-width: 900px) {
+            .back {
+              background-image: url(./assets/lx-image.png);
+              background-size: 200%;
+              background-position: top;
+            }
+          }
+          @media (min-width: 1400px) {
+            .back {
+              background-image: url(./assets/lx-image.png);
+              background-size: 140%;
+              background-position: center;
+            }
+          }
+
+          @media (max-width: 900px) {
+            .back {
+              background-image: url(./assets/image.png);
+            }
+          }
+        </style>
+        <div class="relative top-[16rem]">
+          <div
+            class="w-full flex justify-center items-center flex-col xl:pl-[10rem] px-4 xl:items-start xl:w-[50rem] xl:-translate-y-[6rem]"
+          >
+            <img src="./assets/logo.png" class="xs:w-[240px]" />
+            <div class="text-center xl:text-left text-white">
+              <h1
+                class="text-[1.5em] font-normal leading-[25px] xl:text-[2em] xl:leading-[30px] font-black mt-1 uppercase"
+              >
+                Se a maioria das pessoas não faz dinheiro com a internet, faça
+                parte da minoria que enriquece com ela.
+              </h1>
+              <p class="mt-5 xl:text-[20px]">
+                Descubra como fazer dinheiro na internet e alcançar sua
+                liberdade financeira em 2024.
+              </p>
+              <p class="mt-5 text-[16px] xl:text-[20px]">
+                Faça sua <strong> inscrição 100% grátis </strong>para o evento
+                online: “La Casa Digital” e tenha acesso a 12 maneiras para
+                enriquecer com a internet.
+              </p>
+              <div class="mt-4">
+                <form action="" class="flex flex-col">
+                  <input
+                    type="email"
+                    placeholder="Digite seu melhor e-mail"
+                    class="rounded-md py-2 px-3"
+                  />
+                  <input
+                    type="tel"
+                    placeholder="DDD + Whatsapp"
+                    class="mt-5 py-2 rounded-md px-3"
+                  />
+                </form>
+              </div>
+              <p class="text-left mt-4 text-[10px]">
+                De acordo com as Leis 12.965/2014 e 13.709/2018, autorizo Pablo
+                Marçal a enviar comunicações por e-mail ou qualquer outro meio.
+                Além disso, concordo com a sua política de privacidade.
+              </p>
+
+              <button
+                class="mt-4 rounded-full bg-gradient-to-l from-[#ff2be0] to-[#f4b510] px-8 border border-[#ff2be0] xl: py-2 font-bold shadow-white drop-shadow-xl"
+              >
+                QUERO FAZER DINHEIRO COM MARKETING DIGITAL
+              </button>
+              <p class="text-[12px] tracking-[4px] text-center mt-3">
+                7 DIAS DE CONTEÚDO PRÁTICO E GRATUITO.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="text-center text-white text-xs py-4">
+        <p class="xl:text-[1.7em]">
+          Pablo Marçal 2024 | Todos os Direitos Reservados
+        </p>
+      </footer>
+    </section>
+  </body>
+</html>
