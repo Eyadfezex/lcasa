@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="w-full h-full">
+<html lang="en" class="w-full h-full overflow-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -68,7 +68,8 @@
           }
           @media (min-width: 1600px) {
             .back {
-              background-size: 120%;
+              background-size: 100%;
+              background-position: top;
             }
           }
           @media (max-width: 1100px) {
@@ -84,8 +85,26 @@
               background-position: top;
             }
           }
+          .animated-background {
+            background-size: 350%;
+
+            -webkit-animation: animation 1.5s infinite;
+            -moz-animation: animation 1.5s infinite;
+            animation: animation 1.5s infinite;
+          }
+
+          @keyframes animation {
+            0%,
+            100% {
+              background-position: 0% 100%;
+            }
+
+            50% {
+              background-position: 70% 100%;
+            }
+          }
         </style>
-        <div class="relative top-[16rem]">
+        <div class="relative top-[16rem] xxl:top-[12rem] xxl:left-[4rem]">
           <div
             class="w-full flex justify-center items-center flex-col xl:pl-[10rem] px-4 xl:items-start xl:w-[50rem] xl:-translate-y-[6rem]"
           >
@@ -127,7 +146,7 @@
               </p>
               <div class="flex w-full justify-center">
                 <button
-                  class="mt-4 sm:py-2 sm:px-3 rounded-full bg-gradient-to-l shadow-[0_5px_20px_rgba(240,_46,_170,_0.7)] hover:shadow-[0_5px_20px_rgba(225,_234,_0,_0.78)] from-[#ff2be0] to-[#f4b510] px-8 border border-[#ff2be0] xl:py-2 font-bold transition-all duration-150"
+                  class="mt-4 sm:py-2 sm:px-3 rounded-full bg-gradient-to-r from-[#ff2be0] via-[#f4b510] animated-background to-[#f4b510] shadow-[0_5px_20px_rgba(240,_46,_170,_0.7)] hover:shadow-[0_5px_20px_rgba(225,_234,_0,_0.78)] px-8 border border-[#ff2be0] xl:py-2 font-bold transition-all duration-150"
                 >
                   QUERO FAZER DINHEIRO COM MARKETING DIGITAL
                 </button>
