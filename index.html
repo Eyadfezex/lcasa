@@ -19,6 +19,7 @@
             md: "768px",
             xxl: "1400px",
             xl: "900px",
+            sm: "830px",
           },
         },
       };
@@ -38,24 +39,49 @@
               background-image: url(./assets/lx-image.png);
             }
           }
-          @media (min-width: 900px) {
+          @media (min-width: 830px) {
             .back {
               background-image: url(./assets/lx-image.png);
-              background-size: 200%;
+              background-size: 120%;
               background-position: top;
             }
           }
-          @media (min-width: 1400px) {
+          @media (max-width: 830px) {
             .back {
               background-image: url(./assets/lx-image.png);
-              background-size: 140%;
-              background-position: center;
+              background-size: 170%;
+              background-position: top;
             }
           }
 
+          @media (min-width: 900px) {
+            .back {
+              background-image: url(./assets/lx-image.png);
+              background-size: 230%;
+              background-position: top;
+            }
+          }
+          @media (min-width: 1000px) {
+            .back {
+              background-size: 170%;
+            }
+          }
+          @media (min-width: 1600px) {
+            .back {
+              background-size: 120%;
+            }
+          }
+          @media (max-width: 1100px) {
+            .back {
+              background-size: 210%;
+              background-position: top;
+            }
+          }
           @media (max-width: 900px) {
             .back {
               background-image: url(./assets/image.png);
+              background-size: 100%;
+              background-position: top;
             }
           }
         </style>
@@ -99,12 +125,13 @@
                 Marçal a enviar comunicações por e-mail ou qualquer outro meio.
                 Além disso, concordo com a sua política de privacidade.
               </p>
-
-              <button
-                class="mt-4 rounded-full bg-gradient-to-l from-[#ff2be0] to-[#f4b510] px-8 border border-[#ff2be0] xl: py-2 font-bold shadow-white drop-shadow-xl"
-              >
-                QUERO FAZER DINHEIRO COM MARKETING DIGITAL
-              </button>
+              <div class="flex w-full justify-center">
+                <button
+                  class="mt-4 sm:py-2 sm:px-3 rounded-full bg-gradient-to-l shadow-[0_5px_20px_rgba(240,_46,_170,_0.7)] hover:shadow-[0_5px_20px_rgba(225,_234,_0,_0.78)] from-[#ff2be0] to-[#f4b510] px-8 border border-[#ff2be0] xl:py-2 font-bold transition-all duration-150"
+                >
+                  QUERO FAZER DINHEIRO COM MARKETING DIGITAL
+                </button>
+              </div>
               <p class="text-[12px] tracking-[4px] text-center mt-3">
                 7 DIAS DE CONTEÚDO PRÁTICO E GRATUITO.
               </p>
