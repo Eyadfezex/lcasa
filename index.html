@@ -86,21 +86,27 @@
             }
           }
           .animated-background {
-            background-size: 350%;
-
-            -webkit-animation: animation 1.5s infinite;
-            -moz-animation: animation 1.5s infinite;
-            animation: animation 1.5s infinite;
+            animation: 2.4s cubic-bezier(0.2, 0.5, 0.9, 0.6) 2s infinite normal
+              none running textura;
+            background-image: linear-gradient(
+              45deg,
+              #ff8f25,
+              #ff2be0,
+              #f4b510,
+              #ff2be0,
+              #ff2be0
+            );
+            background-size: 400% 200%;
+            transition: background 1.8s cubic-bezier(0.55, 0.1, 0.47, 0.94) 0s;
+            transition: all 0.8s;
           }
 
-          @keyframes animation {
-            0%,
-            100% {
-              background-position: 0% 100%;
+          @keyframes textura {
+            0% {
+              background-position: 0;
             }
-
-            50% {
-              background-position: 70% 100%;
+            100% {
+              background-position: 100% 0;
             }
           }
         </style>
@@ -146,7 +152,7 @@
               </p>
               <div class="flex w-full justify-center">
                 <button
-                  class="mt-4 sm:py-2 sm:px-3 rounded-full bg-gradient-to-r from-[#ff2be0] via-[#f4b510] animated-background to-[#f4b510] shadow-[0_5px_20px_rgba(240,_46,_170,_0.7)] hover:shadow-[0_5px_20px_rgba(225,_234,_0,_0.78)] px-8 border border-[#ff2be0] xl:py-2 font-bold transition-all duration-150"
+                  class="mt-4 sm:py-2 sm:px-3 rounded-full bg-gradient-to-r from-[#ff2be0] via-[#f4b510] animated-background to-[#f4b510] shadow-[0_5px_20px_rgba(240,_46,_170,_0.7)] hover:shadow-[0_5px_20px_rgba(225,_234,_0,_0.78)] px-8 border border-[#ff2be0] xl:py-2 font-bold transition-all duration-150 xxl:px-[7rem]"
                 >
                   QUERO FAZER DINHEIRO COM MARKETING DIGITAL
                 </button>
